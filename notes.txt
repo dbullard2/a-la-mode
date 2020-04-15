@@ -1,0 +1,16 @@
+- cool colours: #ff004d - red, 202040 - dark blue
+- logo colours: fb5681 - pink, f5fcc1 - yellow, ab56fb - purple
+- name ideas - 'a la mode', 
+- icon - colourful cake / pie
+- extra manifest.json browser action: "default_popup": "popup.html"
+
+//todo
+
+- add custom cursor when extension is active
+- organise javascript
+- work on sizing popup
+- work on design
+
+//ideas
+
+- add option to customise popup so users can make it look how they want. or just add dark mode

@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": " à la mode",
+  "version": "1.1",
+  "description": "An extension to view the CSS of any element on the page",
+  "icons": {
+    "48": "icons/book-48.png",
+    "96": "icons/book-96.png"
+  },
+
+  "permissions": ["bookmarks", "tabs"],
+
+  "browser_action": {
+    "default_icon": "icons/book-48.png",
+    "default_title": "Bookmark it!"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["main.js"]
+    }
+  ]
+}
