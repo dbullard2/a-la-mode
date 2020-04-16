@@ -7144,7 +7144,8 @@ h2 {
   border-radius: 7px;
   position: absolute;
   color: #fff;
-  width: 30vw; }
+  min-width: 100px;
+  text-align: center; }
 
 .row {
   display: flex;
@@ -7153,11 +7154,21 @@ h2 {
 #test-container {
   width: 35vw;
   height: 60vh;
+  overflow-y: auto;
+  overflow-x: hidden;
   margin: 0 auto;
   margin-top: 10vh;
   border-radius: 7px;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-  background-color: #fff; }
+  background-color: #101021;
+  scrollbar-width: none;
+  /* For Firefox */
+  -ms-overflow-style: none;
+  /* For Internet Explorer and Edge */ }
+
+#test-container::-webkit-scrollbar {
+  width: 0px;
+  /* For Chrome, Safari, and Opera */ }
 
 .top {
   width: 100%;
@@ -7166,6 +7177,13 @@ h2 {
   border-radius: 7px 7px 0px 0px;
   color: #fff; }
 
-.top p {
+.top h1 {
   line-height: 90px;
   text-align: center; }
+
+code {
+  background-color: transparent;
+  color: #fbd656; }
+
+.container {
+  margin-left: 5%; }

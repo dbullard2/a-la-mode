@@ -6,10 +6,17 @@
 
 //todo
 
-- add custom cursor when extension is active
+- highlight hovered element when active
 - organise javascript
+    - move all variable declarations to the top
+    - look into combining variable declarations and assignments
 - work on sizing popup
 - work on design
+- work on colours
+- understand what code is doing, then rewrite it
+x look into hiding scroll bar
+    - add down arrow to signifi user can scroll
+- make <div class="top"> sticky
 
 //ideas
 
