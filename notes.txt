@@ -1,8 +1,5 @@
-- cool colours: #ff004d - red, 202040 - dark blue
 - logo colours: fb5681 - pink, f5fcc1 - yellow, ab56fb - purple
-- name ideas - 'a la mode', 
-- icon - colourful cake / pie
-- extra manifest.json browser action: "default_popup": "popup.html"
+- css should be in "web_accessible_resources" i think
 
 //todo
 
@@ -17,6 +14,7 @@
 x look into hiding scroll bar
     - add down arrow to signifi user can scroll
 - make <div class="top"> sticky
+- colourful pie / cake icon to replace book
 
 //ideas
 
