@@ -10,24 +10,41 @@
   <body>
     <div class="section-one">
       <div class="stuff">
-        <h1 class="title is-size-1" id="item-name">
-          <span style="color: #f5fcc1;">à</span> <span style="color: #ff0059;">la</span>
-          <span style="color: #ab56fb;">mode</span>
-        </h1>
-        <div class="buttons">
-          <div class="gradient">
-            <a
-              class="chrome"
-              href="https://addons.mozilla.org/en-US/firefox/addon/read-css/"
-              target="blank"
-              ><h2 class="is-size-4">Get it on Firefox</h2></a
-            >
+        <div class="left">
+          <h1 class="title is-size-1">
+            <span style="color: #f5fcc1;">à</span> <span style="color: #ff0059;">la</span>
+            <span style="color: #ab56fb;">mode</span>
+          </h1>
+          <h2 class="subtitle">An extension to view the CSS of any element on a page</h2>
+          <div class="buttons">
+            <div class="gradient">
+              <a
+                class="chrome"
+                href="https://addons.mozilla.org/en-US/firefox/addon/read-css/"
+                target="blank"
+                ><h2 class="is-size-4">Get it on Firefox</h2></a
+              >
+            </div>
+            <div class="gradient">
+              <a class="chrome"><h2 class="is-size-4">Get it on Chrome</h2></a>
+            </div>
           </div>
-          <div class="gradient">
-            <a class="chrome"><h2 class="is-size-4">Get it on Chrome</h2></a>
+        </div>
+        <div class="demo">
+          <div id="test-container" class="blah blep">
+            <div class="top">
+              <h1 class="title is-size-1" id="item-name">Demo</h1>
+            </div>
+            <div class="container">
+              <div id="classes"></div>
+              <div id="ids"></div>
+              <hr style="width: 10000px; margin-left: -1000px;" />
+              <code id="css"></code>
+            </div>
           </div>
         </div>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
