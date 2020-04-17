@@ -1,6 +1,17 @@
 - logo colours: fb5681 - pink, f5fcc1 - yellow, ab56fb - purple
 - css should be in "web_accessible_resources" i think
 
+- list of classes:
+    section-one
+    stuff
+    row
+    top
+    container
+-list of ids: 
+    square
+    test-container
+    
+
 //todo
 
 - highlight hovered element when active
@@ -15,6 +26,9 @@ x look into hiding scroll bar
     - add down arrow to signifi user can scroll
 - make <div class="top"> sticky
 - colourful pie / cake icon to replace book
+- make css class names unique so they don't fuck w/ the pages existing css
+- add ability to exit a la mode
+- add ability to click to stop test-container from following mouse
 
 //ideas
 

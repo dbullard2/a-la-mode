@@ -1,30 +1,39 @@
-var popup = document.getElementById('square');
+function addCss() {
+  var head = document.head;
+  var link = document.createElement('link');
+
+  link.type = 'text/css';
+  link.rel = 'stylesheet';
+  link.href = 'https://gitcdn.link/repo/dbullard2/a-la-mode/master/css/mystyles.css';
+
+  head.appendChild(link);
+}
+
+addCss();
+
+document.body.insertAdjacentHTML(
+  'beforeend',
+  '<div id="test-container" class="blah blep">      <div class="top">        <h1 class="title is-size-1" id="item-name">          <span style="color: #f5fcc1;">à</span> <span style="color: #ff0059;">la</span>          <span style="color: #ab56fb;">mode</span>        </h1>      </div>      <div class="container">        <div id="classes"></div>        <div id="ids"></div>        <hr style="width: 10000px; margin-left: -1000px;" />        <code id="css"></code>      </div>    </div>'
+);
+
+var popup = document.getElementById('test-container');
+popup.style.zIndex = '9999999999999999';
+popup.style.position = 'absolute';
+
+var colours = ['#f5fcc1', '#ff0059', '#ab56fb'];
+var colour = colours[Math.floor(Math.random() * colours.length)];
+document.getElementById('item-name').style.color = colour;
 
 document.addEventListener('mousemove', function (e) {
-  popup.style.top = event.clientY + 'px';
-  popup.style.left = event.clientX + 'px';
-  popup.innerText = e.target.tagName;
-});
+  popup.style.top = e.clientY + 'px';
+  popup.style.left = e.clientX + 'px';
+  document.getElementById('item-name').innerText = e.target.tagName;
 
-document.addEventListener('click', function (e) {
-  var item = e.target.tagName;
-  var itemObj = document.getElementById('item-name');
   var classObj = document.getElementById('classes');
+  classObj.innerHTML = '';
   var classList = e.target.className.split(' ');
   classList = classList.join(', ');
-  var idObj = document.getElementById('ids');
-  var idList = e.target.id;
-  idObj.innerHTML = '';
-  var code = document.getElementById('css');
-  var colours = ['#f5fcc1', '#ff0059', '#ab56fb'];
-  var colour = colours[Math.floor(Math.random() * colours.length)];
-
-  itemObj.innerText = item;
-  itemObj.style.color = colour;
-  classObj.innerHTML = '';
   classObj.style.color = colour;
-  idObj.style.color = colour;
-
   if (classList == '') {
     classObj.insertAdjacentHTML('beforeend', '<p class="is-size-5">Classes: None</p>');
   } else {
@@ -34,6 +43,10 @@ document.addEventListener('click', function (e) {
     );
   }
 
+  var idObj = document.getElementById('ids');
+  var idList = e.target.id;
+  idObj.innerHTML = '';
+  idObj.style.color = colour;
   if (idList == '') {
     idObj.insertAdjacentHTML('beforeend', '<p class="is-size-5">IDs: None</p>');
   } else {
@@ -43,7 +56,9 @@ document.addEventListener('click', function (e) {
     );
   }
 
-  //copied code below!
+  var code = document.getElementById('css');
+  code.innerText = 'hello';
+
   var proto = Element.prototype;
   var slice = Function.call.bind(Array.prototype.slice);
   var matches = Function.call.bind(
@@ -54,17 +69,14 @@ document.addEventListener('click', function (e) {
       proto.oMatchesSelector
   );
 
-  // Returns true if a DOM Element matches a cssRule
   var elementMatchCSSRule = function (element, cssRule) {
     return matches(element, cssRule.selectorText);
   };
 
-  // Returns true if a property is defined in a cssRule
   var propertyInCSSRule = function (prop, cssRule) {
     return prop in cssRule.style && cssRule.style[prop] !== '';
   };
 
-  // Here we get the cssRules across all the stylesheets in one array
   var cssRules = slice(document.styleSheets).reduce(function (rules, styleSheet) {
     return rules.concat(slice(styleSheet.cssRules));
   }, []);
@@ -103,14 +115,6 @@ document.addEventListener('click', function (e) {
     for (i = 0; i < rules.length; i++) {
       var r = rules[i];
       str += r.text + '<br /><br />';
-    }
-
-    var brackets = [];
-
-    for (var i = 0; i < str.length; i++) {
-      if (str.charAt(i) == '{' || str.charAt(i) == '}') {
-        brackets.push(i);
-      }
     }
 
     var strArr = str.split('');
