@@ -16,7 +16,7 @@ $dark-blue: #101021;
 
 html,
 body {
-  //background-color: $dark-blue;
+  background-color: $dark-blue;
   cursor: default;
 }
 
@@ -39,3 +39,39 @@ h2 {
 .stuff {
   margin-left: 5vw;
 }
+
+.section-one a {
+  border: none;
+  color: #fff;
+  width: 144px;
+  height: 64px;
+  border-radius: 5px;
+  background-color: $dark-blue;
+}
+
+.gradient {
+  background: rgb(245, 252, 193);
+  background: linear-gradient(
+    148deg,
+    rgba(245, 252, 193, 1) 0%,
+    rgba(171, 86, 251, 1) 50%,
+    rgba(255, 0, 89, 1) 100%
+  );
+  width: 150px;
+  height: 70px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5%;
+}
+
+@import '../node_modules/bulma/sass/utilities/_all.sass';
+@import '../node_modules/bulma/sass/base/_all.sass';
+@import '../node_modules/bulma/sass/elements/button.sass';
+@import '../node_modules/bulma/sass/elements/container.sass';
+@import '../node_modules/bulma/sass/elements/title.sass';
+@import '../node_modules/bulma/sass/form/_all.sass';
+@import '../node_modules/bulma/sass/components/navbar.sass';
+@import '../node_modules/bulma/sass/layout/hero.sass';
+@import '../node_modules/bulma/sass/layout/section.sass';
