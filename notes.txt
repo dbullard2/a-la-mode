@@ -29,6 +29,7 @@ x look into hiding scroll bar
 - make css class names unique so they don't fuck w/ the pages existing css
 - add ability to exit a la mode
 - add ability to click to stop test-container from following mouse
+- put data in popup / in a static spot, don't have it follow the mouse
 
 //ideas
 
