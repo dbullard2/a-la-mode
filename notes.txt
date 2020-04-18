@@ -1,15 +1,5 @@
 - logo colours: fb5681 - pink, f5fcc1 - yellow, ab56fb - purple
 - css should be in "web_accessible_resources" i think
-
-- list of classes:
-    section-one
-    stuff
-    row
-    top
-    container
--list of ids: 
-    square
-    test-container
     
 
 //todo

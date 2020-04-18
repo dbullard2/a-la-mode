@@ -44,7 +44,7 @@ h2 {
   width: 0px; /* For Chrome, Safari, and Opera */
 }
 
-.top {
+.mode--top {
   width: 100%;
   height: 15%;
   background-color: #101021;
@@ -52,16 +52,16 @@ h2 {
   color: #fff;
 }
 
-.top h1 {
+.mode--top h1 {
   line-height: 90px;
   text-align: center;
 }
 
-code {
+#mode--css {
   background-color: transparent;
   color: #fbd656;
 }
 
-.container {
+.mode--container {
   margin-left: 5%;
 }
