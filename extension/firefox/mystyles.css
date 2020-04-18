@@ -28,22 +28,7 @@ h2 {
   margin-left: 5vw;
 }
 
-#square {
-  background-color: #101021;
-  border: 2px solid #ff0059;
-  border-radius: 7px;
-  position: absolute;
-  color: #fff;
-  min-width: 100px;
-  text-align: center;
-}
-
-.row {
-  display: flex;
-  color: #000;
-}
-
-#test-container {
+#mode--test-container {
   width: 35vw;
   height: 60vh;
   overflow-y: auto;
@@ -55,7 +40,7 @@ h2 {
   -ms-overflow-style: none; /* For Internet Explorer and Edge */
 }
 
-#test-container::-webkit-scrollbar {
+#mode--test-container::-webkit-scrollbar {
   width: 0px; /* For Chrome, Safari, and Opera */
 }
 

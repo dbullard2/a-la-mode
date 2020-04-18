@@ -14,10 +14,10 @@ addCss();
 
 document.body.insertAdjacentHTML(
   'beforeend',
-  '<div id="test-container" class="blah blep">      <div class="top">        <h1 class="title is-size-1" id="item-name">          <span style="color: #f5fcc1;">à</span> <span style="color: #ff0059;">la</span>          <span style="color: #ab56fb;">mode</span>        </h1>      </div>      <div class="container">        <div id="classes"></div>        <div id="ids"></div>        <hr style="width: 10000px; margin-left: -1000px;" />        <code id="css"></code>      </div>    </div>'
+  '<div id="mode--test-container" class="blah blep">      <div class="top">        <h1 class="title is-size-1" id="item-name">          <span style="color: #f5fcc1;">à</span> <span style="color: #ff0059;">la</span>          <span style="color: #ab56fb;">mode</span>        </h1>      </div>      <div class="container">        <div id="classes"></div>        <div id="ids"></div>        <hr style="width: 10000px; margin-left: -1000px;" />        <code id="css"></code>      </div>    </div>'
 );
 
-var popup = document.getElementById('test-container');
+var popup = document.getElementById('mode--test-container');
 popup.style.zIndex = '9999999999999999';
 popup.style.position = 'absolute';
 
