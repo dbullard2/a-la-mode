@@ -4,7 +4,7 @@ function addCss() {
 
   link.type = 'text/css';
   link.rel = 'stylesheet';
-  link.href = 'https://gitcdn.link/repo/dbullard2/a-la-mode/master/css/mystyles.css';
+  link.href = 'https://dbullard2.github.io/a-la-mode/extension/firefox/mystyles.css';
   console.log(link);
 
   head.appendChild(link);
